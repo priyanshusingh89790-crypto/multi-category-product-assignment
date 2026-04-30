@@ -1,16 +1,32 @@
-# React + Vite
+# Dynamic Multi-Category Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔧 Tech Stack
 
-Currently, two official plugins are available:
+* React (Vite)
+* Redux Toolkit
+* Tailwind CSS
+* React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Dynamic category-based product rendering
+* Item detail page with dynamic properties
+* Add to cart with quantity control
+* Global header with search, profile, and cart
+* Responsive design for all devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Approach
 
-## Expanding the ESLint configuration
+The application dynamically renders product categories and items from a JSON structure. Items are grouped using JavaScript logic instead of hardcoding categories.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The item detail page uses a loop over the `itemprops` array to render attributes dynamically, making the UI flexible for different product types.
+
+Redux Toolkit is used for managing global state, including catalog data and cart functionality.
+
+## ⏱ Time Taken
+
+Approximately 5–7 hours
+
+## 🔗 Live Demo
+
+https://multi-category-product-assignment.vercel.app/
